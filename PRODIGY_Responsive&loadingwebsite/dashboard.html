@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Preference Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>College Preference Finder</h1>
+  <p>Find best engineering colleges based on your percentile</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Student Details</h3>
+
+    <label>Percentile</label>
+    <input type="number" id="percentile" min="20" max="100">
+
+    <label>Exam</label>
+    <select id="exam">
+      <option>CET</option>
+      <option>JEE</option>
+    </select>
+
+    <label>Country</label>
+    <select>
+      <option>India</option>
+    </select>
+
+    <label>State</label>
+    <select>
+      <option>Maharashtra</option>
+    </select>
+
+    <label>City</label>
+    <select id="city">
+      <option>Pune</option>
+      <option>Mumbai</option>
+      <option>Nashik</option>
+    </select>
+
+    <label>Branch</label>
+    <select id="branch">
+      <option>CS</option>
+      <option>IT</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+    </select>
+
+    <label>College Type</label>
+    <select id="type">
+      <option>Autonomous</option>
+      <option>Non-Autonomous</option>
+    </select>
+
+    <button onclick="findColleges()">Find Colleges</button>
+  </div>
+
+  <div class="card">
+    <h3>Recommended Colleges</h3>
+    <div id="result"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
